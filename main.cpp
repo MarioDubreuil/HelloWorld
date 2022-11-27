@@ -1,16 +1,11 @@
 #include <iostream>
 
 int main() {
-    int x = 17;
-    int y = 23;
-    std::cout << "before:\n";
-    std::cout << "x: " << x << "\n";
-    std::cout << "y: " << y << "\n";
-    int temp = x;
-    x = y;
-    y = temp;
-    std::cout << "after:\n";
-    std::cout << "x: " << x << "\n";
-    std::cout << "y: " << y << "\n";
+    const double pi = 3.14;
+    double r = 10;
+    double c = 2 * pi * r;
+    std::cout << "pi = " << pi << "\n";
+    std::cout << "r = " << r << "\n";
+    std::cout << "c = 2*pi*r = " << c << "\n";
     return 0;
 }
