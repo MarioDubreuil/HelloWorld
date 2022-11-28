@@ -13,14 +13,32 @@
 //    std::cout << "c = 2*pi*r = " << c << "\n";
 //}
 
-void namingConvention() {
-    int file_size;  // snake case
-    int FileSize;   // pascal case
-    int fileSize;   // camel case
+//void namingConvention() {
+//    int file_size;  // snake case
+//    int FileSize;   // pascal case
+//    int fileSize;   // camel case
+//}
+
+void mathematicalExpressions() {
+    int x = 10;
+    int y = 3;
+    int z = x + y;
+    std::cout << z << "\n";
+    z = x - y;
+    std::cout << z << "\n";
+    z = x * y;
+    std::cout << z << "\n";
+    z = x / y;
+    std::cout << z << "\n";
+    z = x % y;
+    std::cout << z << "\n";
+    double c = (double)x / y;
+    std::cout << c << "\n";
 }
 
 int main() {
 //    hello();
 //    exchange();
+    mathematicalExpressions();
     return 0;
 }
