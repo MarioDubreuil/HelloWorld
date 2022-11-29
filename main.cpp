@@ -19,26 +19,34 @@
 //    int fileSize;   // camel case
 //}
 
-void mathematicalExpressions() {
-    int x = 10;
-    int y = 3;
-    int z = x + y;
-    std::cout << z << "\n";
-    z = x - y;
-    std::cout << z << "\n";
-    z = x * y;
-    std::cout << z << "\n";
-    z = x / y;
-    std::cout << z << "\n";
-    z = x % y;
-    std::cout << z << "\n";
-    double c = (double)x / y;
-    std::cout << c << "\n";
+//void mathematicalExpressions() {
+//    int x = 10;
+//    int y = 3;
+//    int z = x + y;
+//    std::cout << z << "\n";
+//    z = x - y;
+//    std::cout << z << "\n";
+//    z = x * y;
+//    std::cout << z << "\n";
+//    z = x / y;
+//    std::cout << z << "\n";
+//    z = x % y;
+//    std::cout << z << "\n";
+//    double c = (double)x / y;
+//    std::cout << c << "\n";
+//}
+
+void orderOfOperators() {
+    double x = 10;
+    double y = 5;
+    double z = (x + 10) / (3 * y);
+    std::cout << z;
 }
 
 int main() {
 //    hello();
 //    exchange();
-    mathematicalExpressions();
+//    mathematicalExpressions();
+    orderOfOperators();
     return 0;
 }
