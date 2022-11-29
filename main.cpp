@@ -45,20 +45,28 @@ using namespace std;
 //    std::cout << z;
 //}
 
-void writeToConsole() {
-    double salesAmount = 95000;
-    cout << "Sales = " << salesAmount << endl;
+//void writeToConsole() {
+//    double salesAmount = 95000;
+//    cout << "Sales = " << salesAmount << endl;
+//
+//    const double stateTaxRate = 0.04;
+//    double stateTaxAmount = stateTaxRate * salesAmount;
+//    cout << "State Tax = " << stateTaxAmount << endl;
+//
+//    const double countyTaxRate = 0.02;
+//    double countyTaxAmount = countyTaxRate * salesAmount;
+//    cout << "County tax = " << countyTaxAmount << endl;
+//
+//    double totalTaxAmount = stateTaxAmount + countyTaxAmount;
+//    cout << "Total Tax = " << totalTaxAmount;
+//}
 
-    const double stateTaxRate = 0.04;
-    double stateTaxAmount = stateTaxRate * salesAmount;
-    cout << "State Tax = " << stateTaxAmount << endl;
-
-    const double countyTaxRate = 0.02;
-    double countyTaxAmount = countyTaxRate * salesAmount;
-    cout << "County tax = " << countyTaxAmount << endl;
-
-    double totalTaxAmount = stateTaxAmount + countyTaxAmount;
-    cout << "Total Tax = " << totalTaxAmount;
+void readFromConsole() {
+    cout << "Enter temperature in Fahrenheit: ";
+    int fahrenheit;
+    cin >> fahrenheit;
+    double celsius = (fahrenheit - 32) * 5 / 9.0;
+    cout << "temperature in Celsius: " << celsius;
 }
 
 int main() {
@@ -66,6 +74,7 @@ int main() {
 //    exchange();
 //    mathematicalExpressions();
 //    orderOfOperators();
-    writeToConsole();
+//    writeToConsole();
+    readFromConsole();
     return 0;
 }
