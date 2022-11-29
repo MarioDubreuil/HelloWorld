@@ -1,5 +1,7 @@
 #include <iostream>
 
+using namespace std;
+
 //void hello() {
 //    std::cout << "Hello world!\n";
 //}
@@ -36,17 +38,34 @@
 //    std::cout << c << "\n";
 //}
 
-void orderOfOperators() {
-    double x = 10;
-    double y = 5;
-    double z = (x + 10) / (3 * y);
-    std::cout << z;
+//void orderOfOperators() {
+//    double x = 10;
+//    double y = 5;
+//    double z = (x + 10) / (3 * y);
+//    std::cout << z;
+//}
+
+void writeToConsole() {
+    double salesAmount = 95000;
+    cout << "Sales = " << salesAmount << endl;
+
+    const double stateTaxRate = 0.04;
+    double stateTaxAmount = stateTaxRate * salesAmount;
+    cout << "State Tax = " << stateTaxAmount << endl;
+
+    const double countyTaxRate = 0.02;
+    double countyTaxAmount = countyTaxRate * salesAmount;
+    cout << "County tax = " << countyTaxAmount << endl;
+
+    double totalTaxAmount = stateTaxAmount + countyTaxAmount;
+    cout << "Total Tax = " << totalTaxAmount;
 }
 
 int main() {
 //    hello();
 //    exchange();
 //    mathematicalExpressions();
-    orderOfOperators();
+//    orderOfOperators();
+    writeToConsole();
     return 0;
 }
