@@ -1,4 +1,5 @@
 #include <iostream>
+#include <cmath>
 
 using namespace std;
 
@@ -61,12 +62,27 @@ using namespace std;
 //    cout << "Total Tax = " << totalTaxAmount;
 //}
 
-void readFromConsole() {
-    cout << "Enter temperature in Fahrenheit: ";
-    int fahrenheit;
-    cin >> fahrenheit;
-    double celsius = (fahrenheit - 32) * 5 / 9.0;
-    cout << "temperature in Celsius: " << celsius;
+//void readFromConsole() {
+//    cout << "Enter temperature in Fahrenheit: ";
+//    int fahrenheit;
+//    cin >> fahrenheit;
+//    double celsius = (fahrenheit - 32) * 5 / 9.0;
+//    cout << "temperature in Celsius: " << celsius;
+//}
+
+void workingWithStdLib() {
+    double result1 = floor(1.2);
+    cout << result1 << endl;
+
+    double result2 = pow(2, 3);
+    cout << result2 << endl;
+
+    cout << "Enter circle radius: ";
+    double radius;
+    cin >> radius;
+
+    double circleArea = M_PI * pow(radius, 2);
+    cout << "Area: " << circleArea;
 }
 
 int main() {
@@ -75,6 +91,7 @@ int main() {
 //    mathematicalExpressions();
 //    orderOfOperators();
 //    writeToConsole();
-    readFromConsole();
+//    readFromConsole();
+    workingWithStdLib();
     return 0;
 }
